@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessible Website Example</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:focus,
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    :focus {
+      outline: 3px solid orange;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Accessible Website</h1>
+    <p>This website is designed to be accessible to everyone.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About This Site</h2>
+      <p>
+        This site uses semantic HTML, keyboard navigation,
+        readable colors, and screen reader-friendly labels.
+      </p>
+
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Placeholder image showing a gray rectangle"
+      />
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <form>
+        <label for="name">Your name:</label><br />
+        <input id="name" type="text" /><br /><br />
+
+        <label for="email">Your email:</label><br />
+        <input id="email" type="email" /><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Accessible Website</p>
+  </footer>
+</body>
+</html>
